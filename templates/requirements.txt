@@ -1,0 +1,10 @@
+pyTelegramBotAPI
+playwright
+playwright-stealth
+pymongo
+flask
+shodan
+jsbeautifier
+httpx
+requests
+dnspython
