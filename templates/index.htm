@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <style>
+        body { background: #0a0a0a; color: #00ff41; font-family: monospace; padding: 20px; }
+        h1 { border-bottom: 2px solid #00ff41; padding-bottom: 10px; }
+        .leak-card { background: #1a1a1a; border: 1px solid #333; margin: 10px 0; padding: 15px; border-radius: 5px; }
+        code { color: #fff; background: #222; padding: 2px 5px; }
+    </style>
+</head>
+<body>
+    <h1>🕵️‍♂️ سجلات استخبارات الظل</h1>
+    {% for leak in leaks %}
+    <div class="leak-card">
+        <strong>الهدف:</strong> {{ leak.target }} <br>
+        <strong>البيانات:</strong> <code>{{ leak.content }}</code>
+    </div>
+    {% endfor %}
+</body>
+</html>
